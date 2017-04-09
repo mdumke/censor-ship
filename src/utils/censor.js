@@ -1,10 +1,8 @@
 /**
- * censor
- *
  * Returns a string where all forbidden words have been replaced with *****
  *
  * @param {string} text - The cleartext input
- * @param {Array[string]} forbiddenWords - The words to replace
+ * @param {string[]} forbiddenWords - The words to replace
  *
  * @returns {string}  - The censored text
  *
@@ -17,6 +15,9 @@
  * or any of (.,!?).
  *
  * @example
+ *
+ * Here are some usage-examples and their return-values
+ *
  * ```js
  * censor('Some text', [])
  * // -> 'Some text'
