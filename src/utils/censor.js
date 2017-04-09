@@ -4,7 +4,7 @@
  * @param {string} text - The cleartext input
  * @param {string[]} forbiddenWords - The words to replace
  *
- * @returns {string}  - The censored text
+ * @returns {string} - The censored text
  *
  * As you can see from the examples below, a each instance of a word in the given
  * string will be replaced by some *** (as many as there are letters). This

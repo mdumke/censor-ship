@@ -1,3 +1,4 @@
+import { describe, it } from 'mocha'
 import expect from 'expect'
 
 import censor from '../src/utils/censor'
