@@ -7,7 +7,7 @@ const CensoredOutput = props => {
       value={props.text}
       rows='8'
       style={{resize: 'none'}}
-      className='form-control disabled'></textarea>
+      className='form-control disabled' />
   )
 }
 

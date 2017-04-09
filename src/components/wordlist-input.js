@@ -1,14 +1,15 @@
 import React from 'react'
 
-const CleartextInput = props => {
+const WordlistInput = props => {
   return (
     <textarea
       onChange={e => props.onInputChange(e.target.value)}
       className='form-control'
       rows='8'
       style={{resize: 'none'}}
-      placeholder='Please enter some text' />
+      value={props.wordlist}
+      placeholder='Enter words to censor' />
   )
 }
 
-export default CleartextInput
+export default WordlistInput
