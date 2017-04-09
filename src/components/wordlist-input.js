@@ -8,7 +8,7 @@ const WordlistInput = props => {
       rows='8'
       style={{resize: 'none'}}
       value={props.wordlist}
-      placeholder='Enter words to censor' />
+      placeholder='Each word on a new line' />
   )
 }
 

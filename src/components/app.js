@@ -8,7 +8,7 @@ import CleartextInput from './cleartext-input'
 import CensoredOutput from './censored-output'
 import WordListInput from './wordlist-input'
 
-import { censor } from '../utils/censor.js'
+import censor from '../utils/censor'
 
 class App extends Component {
   constructor (props) {
@@ -16,7 +16,7 @@ class App extends Component {
 
     this.state = {
       censoredText: '',
-      wordlist: 'Freedom\nMusic\nFun',
+      wordlist: 'Freedom\nMusic\n',
       text: ''
     }
   }
@@ -33,7 +33,7 @@ class App extends Component {
               <CleartextInput
                 onInputChange={text => this.setState({
                   text: text,
-                  censoredText: censor(text, this.state.wordlist)
+                  censoredText: censor(text, this.state.wordlist.split('\n'))
                 })} />
             </div>
           </div>
@@ -44,7 +44,7 @@ class App extends Component {
               <WordListInput
                 onInputChange={words => this.setState({
                   wordlist: words,
-                  censoredText: censor(this.state.text, words)
+                  censoredText: censor(this.state.text, words.split('\n'))
                 })}
                 wordlist={this.state.wordlist} />
             </div>

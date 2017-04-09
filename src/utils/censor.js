@@ -31,9 +31,9 @@
  * // -> 'First *******. Second *******!'
  * ```
  */
-function censor (text, wordlist) {
+function censor (text, forbiddenWords) {
   // not implemented yet
   return text
 }
 
-export { censor }
+export default censor
